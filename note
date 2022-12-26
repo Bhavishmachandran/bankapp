@@ -1,0 +1,31 @@
+                             angular
+                                                                  bank app in angular
+                                                                  front end:angular
+                                                                  back end: nodejs(express)
+                                                                  database:mongodb
+
+        basic commands
+ 
+1.create a projectn - ng new projectname
+2.create a component - ng g c componentname
+3.run - ng serve -o
+
+
+{{html--view}}
+{{ts-component--logic}}
+
+###data binding ----to share data inside component
+
+1.one way data binding   (ts to html or html to ts)
+       a)component to view
+               a1)string interpolation-{{ex}}
+               a2)property binding -[atribute name]='property'
+        b) view to component
+               b1)event binding-(event_name)="function name" 
+               b2)event binding using $event -  (event_name)="function name($event)"  
+                
+               b3)event binding using template referecing variable-#variable_name
+2. two way binding
+data share in both direction...html to ts/// ts to html
+ngmodel(library)-import from forms module
+import
