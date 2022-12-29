@@ -19,13 +19,45 @@
 1.one way data binding   (ts to html or html to ts)
        a)component to view
                a1)string interpolation-{{ex}}
+
                a2)property binding -[atribute name]='property'
+
         b) view to component
                b1)event binding-(event_name)="function name" 
+
                b2)event binding using $event -  (event_name)="function name($event)"  
-                
-               b3)event binding using template referecing variable-#variable_name
+
+               b3)event binding using template referecing variable- #variable_name
+
 2. two way binding
+
 data share in both direction...html to ts/// ts to html
-ngmodel(library)-import from forms module
-import
+
+ngmodel(library)-import from --formsmodule
+import ngmodel from formsmodule
+
+
+3.angular routing
+
+to set path for a component
+{
+  path:'',component:LoginComponent
+  // 4200login
+},
+{
+  path:'dashboard',component:DashboardComponent
+  4200//dashboard
+}
+use router outlet selector inside the root component
+
+4.dependency injection
+
+to share data between two components
+here we use constructer to achive this concept
+eg:login to DASHBOARD
+
+5.ANGULAR SERVICES
+
+to hold redundent data (duplicate data)
+
+ to create a service in angular -ng g s service-name

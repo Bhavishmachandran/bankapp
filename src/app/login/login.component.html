@@ -10,11 +10,11 @@
     
     <form class="p-3 mt-3">
         <div class="form-field d-flex align-items-center">
-            <input (change)="acnochange($event)" type="text" name="acno" id="login_acno" [placeholder]="account">
+            <input [(ngModel)]="acno" type="text" name="acno" id="login_acno" [placeholder]="account">
     <!-- property binding -->
         </div>
         <div class="form-field d-flex align-items-center">
-            <input  (change)="pswdchange($event)" type="password" name="password" id="login_pswd" placeholder="Password">
+            <input [(ngModel)]="pswd" type="password" name="password" id="login_pswd" placeholder="Password">
         </div>
         <button class="btn mt-3" (click)="login()" type="button" >Login</button>
 
@@ -23,4 +23,4 @@
        <a routerLink="register">Sign up</a>
     </div>
 </div>
- <app-register></app-register> 
+ <!-- <app-register></app-register>  -->
